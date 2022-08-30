@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useDispatch, useSelector } from 'react-redux';
+import Header from './components/Header';
+import { changeUser, selectUser } from './redux/slice/userSlice';
 
 function App() {
+
+  //disparar a ação
+  const dispatch = useDispatch()
+
+  function teste(){
+    dispatch(changeUser('joyce'))
+  }
+
+  //consumir o estado
+  const user = useSelector(selectUser)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title='Joyzis Store'/>
     </div>
   );
 }

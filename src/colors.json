@@ -1,0 +1,122 @@
+{
+  "Gray": {
+    "100": {
+      "value": "#f8f8f8",
+      "type": "color"
+    },
+    "200": {
+      "value": "#f1f2f2",
+      "type": "color"
+    },
+    "300": {
+      "value": "#ebeceb",
+      "type": "color"
+    },
+    "400": {
+      "value": "#e4e5e4",
+      "type": "color"
+    },
+    "500": {
+      "value": "#dddfde",
+      "type": "color"
+    },
+    "600": {
+      "value": "#c5c7c6",
+      "type": "color"
+    },
+    "700": {
+      "value": "#abacab",
+      "type": "color"
+    },
+    "800": {
+      "value": "#8b8d8c",
+      "type": "color"
+    },
+    "900": {
+      "value": "#626363",
+      "type": "color"
+    }
+  },
+  "Primary": {
+    "100": {
+      "value": "#e4e5fe",
+      "type": "color"
+    },
+    "200": {
+      "value": "#c7c9fd",
+      "type": "color"
+    },
+    "300": {
+      "value": "#a4a8fc",
+      "type": "color"
+    },
+    "400": {
+      "value": "#7780fb",
+      "type": "color"
+    },
+    "500": {
+      "value": "#2941fb",
+      "type": "color"
+    },
+    "600": {
+      "value": "#243ae0",
+      "type": "color"
+    },
+    "700": {
+      "value": "#1f32c2",
+      "type": "color"
+    },
+    "800": {
+      "value": "#19299e",
+      "type": "color"
+    },
+    "900": {
+      "value": "#121d70",
+      "type": "color"
+    }
+  },
+  "Golden Banner": {
+    "100": {
+      "value": "#fef5e4",
+      "type": "color"
+    },
+    "200": {
+      "value": "#fdebc7",
+      "type": "color"
+    },
+    "300": {
+      "value": "#fce0a4",
+      "type": "color"
+    },
+    "400": {
+      "value": "#fbd577",
+      "type": "color"
+    },
+    "500": {
+      "value": "#faca28",
+      "type": "color"
+    },
+    "600": {
+      "value": "#dfb423",
+      "type": "color"
+    },
+    "700": {
+      "value": "#c19c1e",
+      "type": "color"
+    },
+    "800": {
+      "value": "#9e7f19",
+      "type": "color"
+    },
+    "900": {
+      "value": "#6f5a11",
+      "type": "color"
+    }
+  },
+  "Dark": {
+    "500": {
+      "value": "#333333",
+      "type": "color"
+    }
+  }
+}
