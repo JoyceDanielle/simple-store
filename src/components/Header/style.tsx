@@ -11,6 +11,8 @@ export const Container = styled.div`
 export const Button = styled.button`
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 `
 
 export const Title = styled.span`

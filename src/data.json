@@ -1,0 +1,23 @@
+[
+    {
+        "id": "e90c5b10-ab8e-4ded-aab1-cfc49013f02a",
+        "image": "https://picsum.photos/200",
+        "name": "Galaxy Book2 Pro - i7, 16GB, 1TB SSD Grafite",
+        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting...",
+        "price": "6.299,10"
+    },
+    {
+        "id": "c9014114-773c-455f-9d5b-40b0cb3e5f37",
+        "image": "https://picsum.photos/200",
+        "name": "Galaxy Book2 Pro - i7, 16GB, 1TB SSD Grafite",
+        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting...",
+        "price": "6.299,10"
+    },
+    {
+        "id": "59432a56-71d0-45b1-9b27-428982b044f6",
+        "image": "https://picsum.photos/200",
+        "name": "Galaxy Book2 Pro - i7, 16GB, 1TB SSD Grafite",
+        "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting...",
+        "price": "6.299,10"
+    }
+]

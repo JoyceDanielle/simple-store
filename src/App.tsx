@@ -1,6 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
-import Header from './components/Header';
 import { changeUser, selectUser } from './redux/slice/userSlice';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home';
+import DetailProduct from './pages/DetailProduct';
 
 function App() {
 
@@ -16,7 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header title='Joyzis Store'/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/product' element={<DetailProduct/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
