@@ -31,15 +31,6 @@ export const AreaChip = styled.div`
     gap: 8px;
 `
 
-export const Chip = styled.span<{type: string, word: string}>`
-    background-color: ${props => props.type || Colors.Primary[500].value};
-    color: ${props => props.word || '#000'};
-    padding: 2px 8px;
-    font-size: 0.625em;
-    font-weight: 400;
-    border-radius: 5px;
-`
-
 export const AreaInfo = styled.div`
     display: grid;
     background-color: #fff;

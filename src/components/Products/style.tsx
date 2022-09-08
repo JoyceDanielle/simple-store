@@ -8,7 +8,7 @@ export const Container = styled.div`
     scrollbar-width: none;
 
     ::-webkit-scrollbar { 
-    display: none; 
+        display: none; 
     }
 `
 
@@ -16,15 +16,19 @@ export const Main = styled.button`
     display: grid;
     border: none;
     background-color: transparent;
+    margin-top: 20px;
 `   
 
 export const Image = styled.img`
     background-color: '#FFF';
-    padding: 1em;
+    margin-bottom: 8px;
 `
 export const AreaText = styled.div`
     display: grid;
+    row-gap: 5px;
     background-color: ${Colors.Gray[100].value};
+    align-items: start;
+    text-align: start;
 `
 export const Title = styled.span`
     font-size: 0.75em;

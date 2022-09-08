@@ -12,9 +12,12 @@ export const Container = styled.div`
     left: 0;
   
 `
-export const Button = styled.button`
+export const Button = styled.button<{active?: boolean}>`
     background-color: transparent;
     border: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    svg path{
+        fill: ${props=> props.active ? Colors.Primary[500].value: ''};
+    }
 `

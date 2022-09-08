@@ -13,11 +13,12 @@ export const Container = styled.div`
 }
 `
 
-export const Option = styled.span<{selected?: boolean}>`
+export const Option = styled.span<{active: boolean}>`
     font-size: 0.75em;
     color: ${Colors.Gray[600].value};
     padding: 6px 10px;
-    background-color: ${props => props.selected ? Colors.Primary[500].value : Colors.Gray[100].value};
+    background-color: ${props => props.active ? Colors.Primary[500].value : Colors.Gray[100].value};
     border-radius: 5px;
     margin-top: 20px;
+    transition: 0.5s;
 `

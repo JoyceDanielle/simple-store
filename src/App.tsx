@@ -4,6 +4,8 @@ import { changeUser, selectUser } from './redux/slice/userSlice';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import DetailProduct from './pages/DetailProduct';
+import Cart from './pages/Cart';
+import Data from './data.json';
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/product' element={<DetailProduct/>}/>
+          <Route path='/cart' element={<Cart products={Data}/>}/>
         </Routes>
       </BrowserRouter>
     </div>

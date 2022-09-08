@@ -7,17 +7,20 @@ export const slice = createSlice({
         image: '',
         name: '',
         subtitle: '',
-        price: ''
+        price: '',
+        isFavorite: false
     },
     reducers: {
         productDetail(state, {payload}){
-            return {...state, id: payload.id, image: payload.image, name: payload.name, subtitle: payload.subtitle, price: payload.price}
+            return {...state, id: payload.id, image: payload.image, name: payload.name, subtitle: payload.subtitle, price: payload.price, isFavorite: payload.isFavorite}
         },
-       
+       productFavorite(state, {payload}){
+        return {...state, isFavorite: !state.isFavorite}
+       }
     }
 })
 
-export const { productDetail } = slice.actions
+export const { productDetail, productFavorite } = slice.actions
 
 export const selectProduct = state => state.product 
 

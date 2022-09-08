@@ -4,7 +4,7 @@ import Colors from '../../colors.json';
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1.375em;
+    padding: 20px 0;
     background-color:${Colors.Gray[100].value};
 `
 

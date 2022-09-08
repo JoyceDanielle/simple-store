@@ -1,9 +1,10 @@
 import { Product } from "../../interface";
-import { AreaChip, AreaImage, AreaInfo, Chip, Conatiner, Image, LinkFormPayment, Point, Price, SubPrice, Subtitle, Title } from "./style";
+import { AreaChip, AreaImage, AreaInfo, Conatiner, Image, LinkFormPayment, Point, Price, SubPrice, Subtitle, Title } from "./style";
 import Colors from '../../colors.json';
 import Button from "../Button";
 import { BuyIcon } from "../../assets/icons";
 import BottomBar from "../BottomBar";
+import Chip from "../Chip";
 
 interface ItemDetailProps{
     data: Product
@@ -25,12 +26,8 @@ export default function ItemDetail(props: ItemDetailProps){
                 <Point/>
             </AreaImage>
             <AreaChip>
-                <Chip type={Colors["Golden Banner"][500].value} word="#000">
-                    Ofertas
-                </Chip>
-                <Chip type={Colors.Primary[500].value} word="#FFF">
-                    Frete grátis
-                </Chip>
+                <Chip background={Colors["Golden Banner"][500].value} color="#000" title="Oferta"/>
+                <Chip background={Colors.Primary[500].value} color="#FFF" title="Frete grátis"/>
             </AreaChip> 
             <AreaInfo>
                 <Title>{name}</Title>
@@ -38,7 +35,7 @@ export default function ItemDetail(props: ItemDetailProps){
                 <Price>R$ {price}</Price>
                 <SubPrice>12x de R$ {dividedPrice(12, price)} sem juros</SubPrice>
                 <LinkFormPayment>Ver todas as formas de pagamento</LinkFormPayment>
-                <Button text="Adicionar ao carrinho" icon={<BuyIcon/>}/>
+                <Button onClick={()=>{}} text="Adicionar ao carrinho" icon={<BuyIcon/>}/>
                 <BottomBar />
             </AreaInfo>   
         </Conatiner>
