@@ -22,6 +22,8 @@ export const Main = styled.button`
 export const Image = styled.img`
     background-color: '#FFF';
     margin-bottom: 8px;
+    width: 100px;
+    height: 80px;
 `
 export const AreaText = styled.div`
     display: grid;
@@ -29,6 +31,8 @@ export const AreaText = styled.div`
     background-color: ${Colors.Gray[100].value};
     align-items: start;
     text-align: start;
+    max-width: 114px;
+
 `
 export const Title = styled.span`
     font-size: 0.75em;
@@ -38,6 +42,10 @@ export const Title = styled.span`
 export const SubTitle = styled.span`
     font-size: 0.625em;
     color: ${Colors.Gray[800].value};
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 `
 export const Price = styled.span`
     font-size: 0.75em;

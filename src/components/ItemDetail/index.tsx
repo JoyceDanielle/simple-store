@@ -22,7 +22,7 @@ export default function ItemDetail(props: ItemDetailProps){
     return(
         <Conatiner>
             <AreaImage>
-                <Image src={image}/>
+                <Image src={`http://localhost:3000/uploads/${image}`}/>
                 <Point/>
             </AreaImage>
             <AreaChip>

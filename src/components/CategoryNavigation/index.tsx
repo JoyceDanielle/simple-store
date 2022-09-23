@@ -1,6 +1,7 @@
 import { Container, Option } from "./style";
 
 const category = [
+    {id: 0, name: 'Todos'},
     {id: 1, name: 'Eletrônico'},
     {id: 2, name: 'Livro'},
     {id: 3, name: 'Casa'},

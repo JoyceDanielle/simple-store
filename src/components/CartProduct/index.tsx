@@ -16,13 +16,13 @@ export default function CartProduct(props: CartProductProps){
 
     return(
         <Container>
-            <Image src={image} />
+            <Image src={`http://localhost:3000/uploads/${image}`} />
             <AreaInfo>
                 <Title>{name}</Title>
                 <Subtitle>{subtitle}</Subtitle>
                 <AreaPrice>
                     <Price>{price}</Price>
-                    <Button onClick={()=>{dispatch(isVisible(null)); console.log('cliquei')}}>
+                    <Button onClick={()=>{dispatch(isVisible(null));}}>
                         <DeleteIcon/>
                         <TextBtn>Remover</TextBtn>
                     </Button>

@@ -1,9 +1,11 @@
+import { useSelector } from "react-redux";
 import BottomBar from "../../components/BottomBar";
 import Button from "../../components/Button";
 import CartProduct from "../../components/CartProduct";
 import HeaderNavigation from "../../components/HeaderNavigation";
 import Modal from "../../components/Modal";
 import { Product } from "../../interface";
+import { selectLoader } from "../../redux/slice/loaderSlice";
 import { AreaPrice, AreaSubtotal, AreaText, Container, Subtotal, Text } from "./style";
 
 interface CartProps{
@@ -11,6 +13,8 @@ interface CartProps{
 }
 
 export default function Cart({products}: CartProps){
+    const product = localStorage.getItem('product');
+    const loader = useSelector(selectLoader)
 
     const totalProducts = (products: Product[]) =>{
         let sum = 0
@@ -54,7 +58,7 @@ export default function Cart({products}: CartProps){
                 <Subtotal>Subtotal</Subtotal>
                 <Subtotal>R$ {subtotalProducts(products)}</Subtotal>
             </AreaSubtotal>
-            <Button onClick={()=>{}} text="Finalizar"></Button>
+            <Button onClick={()=>{}} text="Finalizar" loader={loader}></Button>
             <BottomBar/>
             <Modal/>
         </Container>

@@ -1,10 +1,12 @@
 import React from "react";
+import { LoaderIcon } from "../../assets/icons";
 import { AreaIcon, Container, Text } from "./style";
 
 interface ButtonProps{
     icon?: React.ReactNode,
     text: string,
-    onClick: ()=> void
+    onClick: ()=> void,
+    loader?: boolean
 }
 
 export default function Button(props: ButtonProps){
@@ -15,7 +17,12 @@ export default function Button(props: ButtonProps){
                     {props.icon}
                 </AreaIcon>
             )}
-            <Text>{props.text}</Text>
+            {
+                props.loader ? 
+                <LoaderIcon/> : 
+                <Text>{props.text}</Text>
+            }
+            
         </Container>
     )
 }

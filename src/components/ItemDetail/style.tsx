@@ -14,6 +14,8 @@ export const AreaImage = styled.div`
 
 export const Image = styled.img`
     background-color: '#FFF';
+    width: 100px;
+    height: 80px;
 
 `
 export const Point = styled.div`

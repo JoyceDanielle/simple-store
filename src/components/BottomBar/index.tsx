@@ -11,16 +11,14 @@ export default function BottomBar(){
     const dispatch = useDispatch()
 
     const navigationActive = (path: string) => {
-        if(path === '/'){
+        if(path === '/' && window.location.pathname === '/'){
             dispatch(isActiveNav1(true))
             dispatch(isActiveNav2(false))
             dispatch(isActiveNav3(false))
-            console.log('estou no home')
-        }else if (path === '/cart'){
+        }else if (path === '/cart' && window.location.pathname === '/cart'){
             dispatch(isActiveNav1(false))
             dispatch(isActiveNav2(true))
             dispatch(isActiveNav3(false))
-            console.log('estou no carrinho')
         }
         navigate(path);
     }

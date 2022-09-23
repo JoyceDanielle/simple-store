@@ -12,6 +12,8 @@ export const slice = createSlice({
     },
     reducers: {
         productDetail(state, {payload}){
+            console.log('payload', payload)
+            localStorage.setItem('product', payload.id);
             return {...state, id: payload.id, image: payload.image, name: payload.name, subtitle: payload.subtitle, price: payload.price, isFavorite: payload.isFavorite}
         },
        productFavorite(state, {payload}){
