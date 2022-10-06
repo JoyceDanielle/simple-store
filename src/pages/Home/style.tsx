@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from '../../colors.json';
+import { device } from "../../Constants";
 
 export const Container = styled.div`
     padding: 0 20px;
@@ -31,4 +32,17 @@ export const ShowProducts = styled.a`
     font-size: 0.625em;
     font-weight: 600;
     color: ${Colors.Gray[800].value};
+`
+
+export const NavigationArea = styled.div`
+    @media ${device.mobileL}{
+        display: none;
+    }
+`
+
+export const BottomArea = styled.div`
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 `

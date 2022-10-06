@@ -38,7 +38,7 @@ export default function RoutesPage(){
           <Route path="/signup" element={<Signup/>} />
           <Route path='/' element={<Home/>}/>
           <Route path='/product' element={<DetailProduct/>}/>
-          <Route path='/cart' element={<Cart products={Data}/>}/>
+          <Route path='/cart' element={<Cart/>}/>
         </Routes>
     )
 }

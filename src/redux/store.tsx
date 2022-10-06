@@ -5,7 +5,7 @@ import productsReducer from './slice/productsSlice'
 import productReducer from './slice/productSlice';
 import modalReducer from './slice/modalSlice';
 import navigationReducer from './slice/navigationSlice';
-import loaderReducer from './slice/loaderSlice';
+import toastReducer from './slice/toastSlice';
 
 export default configureStore({
     reducer : {
@@ -14,6 +14,6 @@ export default configureStore({
         product: productReducer,
         modal: modalReducer,
         navigation: navigationReducer,
-        laoder: loaderReducer
+        toast: toastReducer
     }
 })

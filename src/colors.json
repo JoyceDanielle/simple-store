@@ -118,5 +118,33 @@
       "value": "#333333",
       "type": "color"
     }
+  },
+  "Danger": {
+    "100":{
+      "value": "#F9B3B8",
+      "type": "color"
+    },
+    "500": {
+      "value": "#F03A47",
+      "type": "color"
+    },
+    "900": {
+      "value": "#390408",
+      "type": "color"
+    }
+  },
+  "Success": {
+    "100":{
+      "value": "#AFFDE8",
+      "type": "color"
+    },
+    "500": {
+      "value": "#06d6a0",
+      "type": "color"
+    },
+    "900":{
+      "value": "#023C2C",
+      "type": "color"
+    }
   }
 }

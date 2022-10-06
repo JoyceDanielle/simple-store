@@ -7,10 +7,11 @@ import { Product } from "../../interface";
 import { AreaText, Container, Image, Price, Main, SubTitle, Title } from "./style";
 
 interface ProductsProps{
-    payload: {payload: Product[]}
+    payload: {payload: Product[]},
+    search: string
 }
 
-export default function Products({payload}: ProductsProps){
+export default function Products({payload, search}: ProductsProps){
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const newData = payload.payload
@@ -24,18 +25,24 @@ export default function Products({payload}: ProductsProps){
         <Container>
             {
                 !newData ? <p>Não possui dados</p> :
-                newData.map(item =>{
-                    return(
-                        <Main key={item.id} onClick={()=> productSelected(item)}>
-                            <Image src={`http://localhost:3000/uploads/${item.image}`}/>
-                            <AreaText>
-                                <Title>{item.name}</Title>
-                                <SubTitle>{item.subtitle}</SubTitle>
-                                <Price>R$ {item.price}</Price>
-                            </AreaText>
-                        </Main>
+                newData.map((item, index) =>{
+                    if (item.name.toLowerCase().includes(search)) {
+                        return(
+                            <Main key={index} onClick={()=> productSelected(item)}>
+                                <Image src={`http://localhost:3000/uploads/${item.image}`}/>
+                                <AreaText>
+                                    <Title>{item.name}</Title>
+                                    <SubTitle>{item.subtitle}</SubTitle>
+                                    <Price>R$ {item.price}</Price>
+                                </AreaText>
+                            </Main>
+    
+                        )
+                    }else{
+                      
 
-                    )
+                    }
+                    
                 })
             }
            

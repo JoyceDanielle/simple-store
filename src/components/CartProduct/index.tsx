@@ -3,16 +3,19 @@ import { isVisible } from "../../redux/slice/modalSlice";
 import { DeleteIcon } from "../../assets/icons";
 import { Product } from "../../interface";
 import { AreaInfo, AreaPrice, Button, Container, Image, Price, Subtitle, TextBtn, Title } from "./style";
+import http from "../../axios";
 
 interface CartProductProps{
-    product: Product 
+    product: Product,
+    onDelete: ()=> void
 }
 
 export default function CartProduct(props: CartProductProps){
 
+    const {id, image, name, subtitle, price} = props.product;
     const dispatch = useDispatch();
 
-    const {image, name, subtitle, price} = props.product;
+    
 
     return(
         <Container>
@@ -22,7 +25,7 @@ export default function CartProduct(props: CartProductProps){
                 <Subtitle>{subtitle}</Subtitle>
                 <AreaPrice>
                     <Price>{price}</Price>
-                    <Button onClick={()=>{dispatch(isVisible(null));}}>
+                    <Button onClick={()=>props.onDelete()}>
                         <DeleteIcon/>
                         <TextBtn>Remover</TextBtn>
                     </Button>

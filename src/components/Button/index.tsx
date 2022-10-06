@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { LoaderIcon } from "../../assets/icons";
 import { AreaIcon, Container, Text } from "./style";
 
@@ -10,9 +10,10 @@ interface ButtonProps{
 }
 
 export default function Button(props: ButtonProps){
+ 
     return(
         <Container onClick={()=> props.onClick()}>
-            {props.icon && (
+            {props.icon && !props.loader &&(
                 <AreaIcon>
                     {props.icon}
                 </AreaIcon>

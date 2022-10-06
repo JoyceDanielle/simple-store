@@ -4,6 +4,7 @@ import Colors from '../../colors.json';
 export const Conatiner = styled.div`
     display: grid;
     grid-template-columns: 1fr;
+    overflow-x: hidden;
 `
 export const AreaImage = styled.div`
     display: flex;
@@ -68,4 +69,9 @@ export const LinkFormPayment = styled.a`
      font-weight: 400;
      color: ${Colors.Primary[500].value};
      margin-bottom: 32px;
+`
+export const AreaBottom = styled.div`
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 `
